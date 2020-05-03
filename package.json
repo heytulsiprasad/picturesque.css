@@ -1,0 +1,19 @@
+{
+  "name": "picturesque.css",
+  "version": "1.0.0",
+  "description": "a tool for playing with css filters to get your picture perfect with just css",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",
+    "compile:sass": "node-sass sass/main.scss css/styles.css -o",
+    "watch:sass": "node-sass sass/main.scss css/styles.css -w",
+    "dev": "npm-run-all --parallel start watch:sass"
+  },
+  "author": "Tulsi Prasad",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^4.14.0",
+    "npm-run-all": "^4.1.5"
+  }
+}
