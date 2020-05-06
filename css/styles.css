@@ -4,3 +4,118 @@
   padding: 0;
   margin: 0;
   box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif; }
+
+.heading-primary {
+  font-size: 2.5rem;
+  text-transform: lowercase;
+  font-weight: 300; }
+
+.heading-title {
+  padding: 2rem 3rem;
+  margin-left: 2rem; }
+
+.heading-secondary {
+  font-weight: 400;
+  font-size: 1.35rem; }
+
+.prop__title {
+  margin-left: 1rem; }
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, minmax(auto, 1fr)); }
+
+.main-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  .main-row > [class^="col"] {
+    width: 50%; }
+
+.picture {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2; }
+
+.picture__img {
+  display: block;
+  width: 100%;
+  transition: all .3s ease-out;
+  height: 50vh;
+  object-fit: cover; }
+
+.filters {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2; }
+
+.filter__content {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem; }
+
+.filter__prop {
+  padding: 2rem 4rem; }
+  .filter__prop--title {
+    display: flex; }
+  .filter__prop--slider {
+    position: relative;
+    margin-top: 1rem; }
+
+.toggle-btn {
+  height: 19px;
+  width: 40px;
+  background-color: #808080;
+  border-radius: 10px;
+  position: relative;
+  transition: all .3s ease-in-out;
+  cursor: pointer; }
+  .toggle-btn--active {
+    background-color: #000000; }
+    .toggle-btn--active > div {
+      left: 22px; }
+
+.toggle-thumb {
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  position: absolute;
+  top: 2.45px;
+  left: 3px;
+  border-radius: 50%; }
+
+.range-value {
+  position: absolute;
+  left: 85%;
+  width: 25px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #000; }
+  .range-value p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.range {
+  width: 80%;
+  height: 5px;
+  border-radius: 15px;
+  background-color: #00000024;
+  -webkit-appearance: none;
+  outline: none; }
+
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: black; }

@@ -1,0 +1,32 @@
+.range-value {
+    position: absolute;
+    left: 85%;
+    width: 25px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #000;
+
+    p {
+        @include absCenter;
+    }
+}
+
+.range {
+    width: 80%;
+    height: 5px;
+    border-radius: 15px;
+    background-color: #00000024;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0)
+}
+

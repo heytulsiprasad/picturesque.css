@@ -1,0 +1,26 @@
+.filters {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.filter {
+
+    &__content {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+
+    &__prop {
+        padding: 2rem 4rem;
+
+        &--title {
+            display: flex;
+        }
+
+        &--slider {
+            position: relative;
+            margin-top: 1rem;
+        }
+    }
+}
+

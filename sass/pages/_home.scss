@@ -1,0 +1,18 @@
+// includes styles for complete page i.e. home page
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+}
+
+.main-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    & > [class^="col"] {
+        width: 50%;
+    }
+}
