@@ -55,6 +55,9 @@ let star = {
     sepia: ""
 }
 
+// code block instance
+let $codeblock = $("#code")
+
 $btn.each(function() {
     let $ele = $(this); // current button
     
@@ -107,6 +110,14 @@ $btn.each(function() {
         let design = `${star.blur} ${star.brightness} ${star.contrast} ${star.grayscale} ${star.hue} ${star.invert} ${star.opacity} ${star.saturate} ${star.sepia}`
         return design;
     }
+
+    let showCode = function() {
+        let css = $("#edit").attr("style");
+        if (css === "") {
+            css = "No styles added! Keep adding."
+        }
+        $codeblock.html(css);
+    }
  
     $ele.click(function() {   
         if ($ele.hasClass("toggle-btn--active")) {
@@ -117,12 +128,14 @@ $btn.each(function() {
                 eachStyle();
                 design = allStyles();
                 $("#edit").css("filter", design)
+                showCode();
             })
             $(slideDOM).mousemove(function() {
                 num = this.value;
                 eachStyle();
                 design = allStyles();
                 $("#edit").css("filter", design)
+                showCode();
             })
         } else {
             let style = $("#edit").attr("style")
@@ -176,6 +189,7 @@ $btn.each(function() {
                     design = design.replace(regex, "").trim();
 
                     $("#edit").css("filter", design);
+                    showCode();
 
                 } else {
                     console.log("Doesnt exist!")
@@ -186,4 +200,3 @@ $btn.each(function() {
         }
     })
 })
-

@@ -68,6 +68,12 @@ body {
     position: relative;
     margin-top: 1rem; }
 
+.codeblock {
+  padding: 1rem 5rem; }
+
+.code__block {
+  font-size: 2rem; }
+
 .toggle-btn {
   height: 19px;
   width: 40px;
