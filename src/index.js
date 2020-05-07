@@ -4,7 +4,8 @@ let $btn = $(".toggle-btn");
 
 $btn.each(function() {
     $(this).click(function() {
-        $(this).toggleClass("toggle-btn--active")
+        // toggle button active color on click
+        $(this).toggleClass("toggle-btn--active")        
     })
 })
 
@@ -13,13 +14,29 @@ $btn.each(function() {
 let $slider = $(".range")
 
 $slider.each(function() {
-    let $prev = $(this).prev();
+    let $num = $(this).prev().children().first().children().first()
 
     $(this).change(function() {
-        $prev.html(`<p>${this.value}</p>`);
+        $num.text(this.value);
     })
     $(this).mousemove(function() {
-        $prev.html(`<p>${this.value}</p>`);
+        $num.text(this.value);
     })
 })
+
+// toggle slider disable if button is active
+
+$btn.each(function() {
+    let ele = $(this);
+    let input = ele.parent().next().children().last()
+
+    ele.click(function() {
+        if (ele.hasClass("toggle-btn--active")) {
+            input.prop("disabled", false);
+        } else {
+            input.prop("disabled", true);
+        }
+    })
+})
+
 

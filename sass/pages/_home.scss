@@ -8,11 +8,14 @@
 
 .main-row {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
     & > [class^="col"] {
         width: 50%;
+
+        &:last-child {
+            align-self: flex-start;
+        }
     }
 }

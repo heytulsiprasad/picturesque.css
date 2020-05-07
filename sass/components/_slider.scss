@@ -1,25 +1,31 @@
-.range-value {
+.range__value {
     position: absolute;
     left: 85%;
-    width: 25px;
+    width: 35px;
     height: 20px;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.2);
     text-align: center;
     color: #000;
+}
 
-    p {
-        @include absCenter;
-    }
+.range__content {
+    display: flex;
+    @include absCenter;
+}
+
+.range__unit {
+    margin-left: 1px;
 }
 
 .range {
     width: 80%;
     height: 5px;
     border-radius: 15px;
-    background-color: #00000024;
+    background-color: rgba(0, 0, 0, 0.141);
     -webkit-appearance: none;
     outline: none;
+    cursor: pointer;
 }
 
 .range::-webkit-slider-thumb {
@@ -30,3 +36,13 @@
     background-color: rgb(0, 0, 0)
 }
 
+
+.range:disabled {
+    &::-webkit-slider-thumb {
+        background-color: rgb(128, 128, 128);
+    }
+
+    & {
+        cursor: default;
+    }
+}
