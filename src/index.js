@@ -200,3 +200,17 @@ $btn.each(function() {
         }
     })
 })
+
+// adding event listener to upload btn
+$("#upload").change(function() {
+    loadFile(event)
+})
+
+// loading the uploaded image
+let loadFile = function(event) {
+	src = URL.createObjectURL(event.target.files[0]);
+    $("#edit").attr("src", src);
+    $("#original").attr("src", src);
+};
+
+// adding reset btn functionality
