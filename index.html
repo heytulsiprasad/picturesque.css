@@ -1,230 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/frame-with-picture_1f5bc.png" type="image/x-icon">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/styles.css">
-        <title>Picturesque</title>
-    </head> 
-    <body>
-        <div class="container">
-            <div class="filters">
-                <h1 class="heading-primary heading-title">Picturesque.css</h1>
-                <div class="main-row">
-                    <div class="col-1">
-                        <div class="filter__content">
-                            <div class="filter__prop">
-                                <div class="filter__prop--title">
-                                    <div class="toggle-btn">
-                                        <div class="toggle-thumb"></div>
-                                    </div>
-                                    <h2 class="prop__title heading-secondary">
-                                        blur
-                                    </h2>
-                                </div>
-                                <div class="filter__prop--slider">
-                                    <div class="range__value">
-                                        <div class="range__content">
-                                            <p class="range__num">0</p>
-                                            <p class="range__unit">px</p>
-                                        </div>
-                                    </div>
-                                    <input type="range" class="range" value="0" min="0" max="20" step=".01" disabled>
-                                </div>
-                            </div>
-                            <div class="filter__prop">
-                                <div class="filter__prop--title">
-                                    <div class="toggle-btn">
-                                        <div class="toggle-thumb"></div>
-                                    </div>
-                                    <h2 class="prop__title heading-secondary">
-                                        brightness
-                                    </h2>
-                                </div>
-                                <div class="filter__prop--slider">
-                                                                        <div class="range__value">
-                                        <div class="range__content">
-                                            <p class="range__num">0</p>
-                                            <p class="range__unit"></p>
-                                        </div>
-                                    </div>
-                                    <input type="range" class="range" value="0" min="0" max="5" step="0.001" disabled>
-                                </div>
-                            </div>
-                            <div class="filter__prop">
-                                <div class="filter__prop--title">
-                                    <div class="toggle-btn">
-                                        <div class="toggle-thumb"></div>
-                                    </div>
-                                    <h2 class="prop__title heading-secondary">
-                                        contrast
-                                    </h2>
-                                </div>
-                                <div class="filter__prop--slider">
-                                    <div class="range__value">
-                                        <div class="range__content">
-                                            <p class="range__num">0</p>
-                                            <p class="range__unit">%</p>
-                                        </div>
-                                    </div>
-                                    <input type="range" class="range" value="0" min="0" max="500" disabled>
-                                </div>
-                            </div>
-                            <div class="filter__prop">
-                                <div class="filter__prop--title">
-                                    <div class="toggle-btn">
-                                        <div class="toggle-thumb"></div>
-                                    </div>
-                                    <h2 class="prop__title heading-secondary">
-                                        grayscale
-                                    </h2>
-                                </div>
-                                <div class="filter__prop--slider">
-                                                                        <div class="range__value">
-                                        <div class="range__content">
-                                            <p class="range__num">0</p>
-                                            <p class="range__unit">%</p>
-                                        </div>
-                                    </div>
-                                    <input type="range" class="range" value="0" min="0" max="100" disabled>
-                                </div>
-                            </div>
-                            <div class="filter__prop">
-                                <div class="filter__prop--title">
-                                    <div class="toggle-btn">
-                                        <div class="toggle-thumb"></div>
-                                    </div>
-                                    <h2 class="prop__title heading-secondary">
-                                        hue-rotate
-                                    </h2>
-                                </div>
-                                <div class="filter__prop--slider">
-                                                                        <div class="range__value">
-                                        <div class="range__content">
-                                            <p class="range__num">0</p>
-                                            <p class="range__unit">deg</p>
-                                        </div>
-                                    </div>
-                                    <input type="range" class="range" value="0" min="0" max="360" disabled>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="filter__content">
-                            <div class="filter__prop">
-                                <div class="filter__prop--title">
-                                    <div class="toggle-btn">
-                                        <div class="toggle-thumb"></div>
-                                    </div>
-                                    <h2 class="prop__title heading-secondary">
-                                        invert
-                                    </h2>
-                                </div>
-                                <div class="filter__prop--slider">
-                                                                        <div class="range__value">
-                                        <div class="range__content">
-                                            <p class="range__num">0</p>
-                                            <p class="range__unit">%</p>
-                                        </div>
-                                    </div>
-                                    <input type="range" class="range" value="0" min="0" max="100" disabled>
-                                </div>
-                            </div>
-                            <div class="filter__prop">
-                                <div class="filter__prop--title">
-                                    <div class="toggle-btn">
-                                        <div class="toggle-thumb"></div>
-                                    </div>
-                                    <h2 class="prop__title heading-secondary">
-                                        opacity
-                                    </h2>
-                                </div>
-                                <div class="filter__prop--slider">
-                                                                        <div class="range__value">
-                                        <div class="range__content">
-                                            <p class="range__num">0</p>
-                                            <p class="range__unit">%</p>
-                                        </div>
-                                    </div>
-                                    <input type="range" class="range" value="0" min="0" max="100" disabled>
-                                </div>
-                            </div>
-                            <div class="filter__prop">
-                                <div class="filter__prop--title">
-                                    <div class="toggle-btn">
-                                        <div class="toggle-thumb"></div>
-                                    </div>
-                                    <h2 class="prop__title heading-secondary">
-                                        saturate
-                                    </h2>
-                                </div>
-                                <div class="filter__prop--slider">
-                                    <div class="range__value">
-                                        <div class="range__content">
-                                            <p class="range__num">0</p>
-                                            <p class="range__unit">%</p>
-                                        </div>
-                                    </div>
-                                    <input type="range" class="range" value="0" min="0" max="500" disabled>
-                                </div>
-                            </div>
-                            <div class="filter__prop">
-                                <div class="filter__prop--title">
-                                    <div class="toggle-btn">
-                                        <div class="toggle-thumb"></div>
-                                    </div>
-                                    <h2 class="prop__title heading-secondary">
-                                        sepia
-                                    </h2>
-                                </div>
-                                <div class="filter__prop--slider">
-                                                                        <div class="range__value">
-                                        <div class="range__content">
-                                            <p class="range__num">0</p>
-                                            <p class="range__unit">%</p>
-                                        </div>
-                                    </div>
-                                    <input type="range" class="range" value="0" min="0" max="100" disabled>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- place where user sees the code -->
-                <div class="codeblock">
-                    <h2 class="code__desc">
-                        How it all happened?
-                    </h2>
-                    <code id="code" class="code__block">
-                        Not yet styled!
-                    </code>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/frame-with-picture_1f5bc.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Picturesque</title>
+  </head>
 
-                <!-- upload and reset buttons -->
-                <div class="buttony">
-                    <label class="btn-upload" for="upload">
-                        Upload your own image!
-                        <input type="file" id="upload" name="image" accept="image/*">
-                    </label>
-                    <button class="btn" id="reset">
-                        Reset All
-                    </button>
+  <body>
+    <div class="container">
+      <div class="picture">
+        <div class="picture__box">
+          <img
+            id="edit"
+            class="picture__img"
+            src="images/person-on-a-bridge-near-a-lake-747964.jpg"
+            alt="person-on-a-bridge"
+          />
+        </div>
+        <div class="picture__box">
+          <img
+            id="original"
+            class="picture__img"
+            src="images/person-on-a-bridge-near-a-lake-747964.jpg"
+            alt="person-on-a-bridge"
+          />
+        </div>
+      </div>
+      <div class="filters">
+        <div class="main-row">
+          <div class="col-1">
+            <div class="filter__content">
+              <div class="filter__prop">
+                <div class="filter__prop--title">
+                  <div class="toggle-btn">
+                    <div class="toggle-thumb"></div>
+                  </div>
+                  <h2 class="prop__title heading-secondary">
+                    blur
+                  </h2>
                 </div>
+                <div class="filter__prop--slider">
+                  <div class="range__value">
+                    <div class="range__content">
+                      <p class="range__num">0</p>
+                      <p class="range__unit">px</p>
+                    </div>
+                  </div>
+                  <input
+                    type="range"
+                    class="range"
+                    value="0"
+                    min="0"
+                    max="20"
+                    step=".01"
+                    disabled
+                  />
+                </div>
+              </div>
+              <div class="filter__prop">
+                <div class="filter__prop--title">
+                  <div class="toggle-btn">
+                    <div class="toggle-thumb"></div>
+                  </div>
+                  <h2 class="prop__title heading-secondary">
+                    brightness
+                  </h2>
+                </div>
+                <div class="filter__prop--slider">
+                  <div class="range__value">
+                    <div class="range__content">
+                      <p class="range__num">0</p>
+                      <p class="range__unit"></p>
+                    </div>
+                  </div>
+                  <input
+                    type="range"
+                    class="range"
+                    value="0"
+                    min="0"
+                    max="5"
+                    step="0.001"
+                    disabled
+                  />
+                </div>
+              </div>
+              <div class="filter__prop">
+                <div class="filter__prop--title">
+                  <div class="toggle-btn">
+                    <div class="toggle-thumb"></div>
+                  </div>
+                  <h2 class="prop__title heading-secondary">
+                    contrast
+                  </h2>
+                </div>
+                <div class="filter__prop--slider">
+                  <div class="range__value">
+                    <div class="range__content">
+                      <p class="range__num">0</p>
+                      <p class="range__unit">%</p>
+                    </div>
+                  </div>
+                  <input
+                    type="range"
+                    class="range"
+                    value="0"
+                    min="0"
+                    max="500"
+                    disabled
+                  />
+                </div>
+              </div>
+              <div class="filter__prop">
+                <div class="filter__prop--title">
+                  <div class="toggle-btn">
+                    <div class="toggle-thumb"></div>
+                  </div>
+                  <h2 class="prop__title heading-secondary">
+                    grayscale
+                  </h2>
+                </div>
+                <div class="filter__prop--slider">
+                  <div class="range__value">
+                    <div class="range__content">
+                      <p class="range__num">0</p>
+                      <p class="range__unit">%</p>
+                    </div>
+                  </div>
+                  <input
+                    type="range"
+                    class="range"
+                    value="0"
+                    min="0"
+                    max="100"
+                    disabled
+                  />
+                </div>
+              </div>
+              <div class="filter__prop">
+                <div class="filter__prop--title">
+                  <div class="toggle-btn">
+                    <div class="toggle-thumb"></div>
+                  </div>
+                  <h2 class="prop__title heading-secondary">
+                    hue-rotate
+                  </h2>
+                </div>
+                <div class="filter__prop--slider">
+                  <div class="range__value">
+                    <div class="range__content">
+                      <p class="range__num">0</p>
+                      <p class="range__unit">deg</p>
+                    </div>
+                  </div>
+                  <input
+                    type="range"
+                    class="range"
+                    value="0"
+                    min="0"
+                    max="360"
+                    disabled
+                  />
+                </div>
+              </div>
             </div>
-            <div class="picture">
-                <div class="picture__box">
-                    <img id="edit"class="picture__img" src="images/person-on-a-bridge-near-a-lake-747964.jpg" alt="person-on-a-bridge">
+          </div>
+          <div class="col-2">
+            <div class="filter__content">
+              <div class="filter__prop">
+                <div class="filter__prop--title">
+                  <div class="toggle-btn">
+                    <div class="toggle-thumb"></div>
+                  </div>
+                  <h2 class="prop__title heading-secondary">
+                    invert
+                  </h2>
                 </div>
-                <div class="picture__box">
-                    <img id="original" class="picture__img" src="images/person-on-a-bridge-near-a-lake-747964.jpg" alt="person-on-a-bridge">
+                <div class="filter__prop--slider">
+                  <div class="range__value">
+                    <div class="range__content">
+                      <p class="range__num">0</p>
+                      <p class="range__unit">%</p>
+                    </div>
+                  </div>
+                  <input
+                    type="range"
+                    class="range"
+                    value="0"
+                    min="0"
+                    max="100"
+                    disabled
+                  />
                 </div>
+              </div>
+              <div class="filter__prop">
+                <div class="filter__prop--title">
+                  <div class="toggle-btn">
+                    <div class="toggle-thumb"></div>
+                  </div>
+                  <h2 class="prop__title heading-secondary">
+                    opacity
+                  </h2>
+                </div>
+                <div class="filter__prop--slider">
+                  <div class="range__value">
+                    <div class="range__content">
+                      <p class="range__num">0</p>
+                      <p class="range__unit">%</p>
+                    </div>
+                  </div>
+                  <input
+                    type="range"
+                    class="range"
+                    value="0"
+                    min="0"
+                    max="100"
+                    disabled
+                  />
+                </div>
+              </div>
+              <div class="filter__prop">
+                <div class="filter__prop--title">
+                  <div class="toggle-btn">
+                    <div class="toggle-thumb"></div>
+                  </div>
+                  <h2 class="prop__title heading-secondary">
+                    saturate
+                  </h2>
+                </div>
+                <div class="filter__prop--slider">
+                  <div class="range__value">
+                    <div class="range__content">
+                      <p class="range__num">0</p>
+                      <p class="range__unit">%</p>
+                    </div>
+                  </div>
+                  <input
+                    type="range"
+                    class="range"
+                    value="0"
+                    min="0"
+                    max="500"
+                    disabled
+                  />
+                </div>
+              </div>
+              <div class="filter__prop">
+                <div class="filter__prop--title">
+                  <div class="toggle-btn">
+                    <div class="toggle-thumb"></div>
+                  </div>
+                  <h2 class="prop__title heading-secondary">
+                    sepia
+                  </h2>
+                </div>
+                <div class="filter__prop--slider">
+                  <div class="range__value">
+                    <div class="range__content">
+                      <p class="range__num">0</p>
+                      <p class="range__unit">%</p>
+                    </div>
+                  </div>
+                  <input
+                    type="range"
+                    class="range"
+                    value="0"
+                    min="0"
+                    max="100"
+                    disabled
+                  />
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
+        <!-- place where user sees the code -->
+        <div class="codeblock">
+          <h2 class="code__desc">
+            How it all happened?
+          </h2>
+          <code id="code" class="code__block">
+            Not yet styled!
+          </code>
         </div>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="src/index.js"></script>
-    </body>                                                                             
+        <!-- upload and reset buttons -->
+        <div class="buttony">
+          <label class="btn-upload" for="upload">
+            Upload your own image!
+            <input
+              type="file"
+              id="upload"
+              name="image"
+              accept="image/*"
+            />
+          </label>
+          <button class="btn" id="reset">
+            Reset All
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="src/index.js"></script>
+  </body>
 </html>
