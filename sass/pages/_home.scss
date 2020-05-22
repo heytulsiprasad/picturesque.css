@@ -11,7 +11,7 @@
     justify-content: space-between;
     align-items: center;
 
-    & > [class^="col"] {
+    &>[class^="col"] {
         width: 50%;
 
         &:last-child {
