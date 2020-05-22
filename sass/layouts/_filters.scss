@@ -1,17 +1,11 @@
 .filters {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+    grid-column: col-start 1 / col-end 2;
+    grid-row: filter-start / filter-end;
 }
 
 .filter {
-
-    &__content {
-        margin-left: 2.5rem;
-        margin-right: 2.5rem;
-    }
-
     &__prop {
-        padding: 2rem 4rem;
+        padding: 1.5rem 2rem;
 
         &--title {
             display: flex;
@@ -20,6 +14,25 @@
         &--slider {
             position: relative;
             margin-top: 1rem;
+        }
+    }
+}
+
+h1.filter-top {
+    font-size: 3rem;
+    padding: 1rem 2rem;
+}
+
+.main-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &>[class^="col"] {
+        width: 50%;
+
+        &:last-child {
+            align-self: flex-start;
         }
     }
 }

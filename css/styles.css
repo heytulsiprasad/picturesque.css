@@ -3,8 +3,7 @@
 *::after {
   padding: 0;
   margin: 0;
-  box-sizing: inherit;
-  border: 1px solid rgba(0, 255, 221, 0.527); }
+  box-sizing: inherit; }
 
 html {
   font-size: 62.5%; }
@@ -31,8 +30,35 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(2, minmax(auto, 1fr)); }
+  grid-template-rows: [cover-start] max-content [cover-end filter-start] 1fr [filter-end about-start] max-content [about-end];
+  grid-template-columns: repeat(4, [col-start] 2fr [col-end]); }
+
+.picture {
+  grid-column: col-start 1 / col-end 4;
+  grid-row: cover-start / cover-end; }
+
+.picture {
+  display: flex; }
+  .picture__img {
+    display: block;
+    width: 100%;
+    object-fit: cover; }
+
+.filters {
+  grid-column: col-start 1 / col-end 2;
+  grid-row: filter-start / filter-end; }
+
+.filter__prop {
+  padding: 1.5rem 2rem; }
+  .filter__prop--title {
+    display: flex; }
+  .filter__prop--slider {
+    position: relative;
+    margin-top: 1rem; }
+
+h1.filter-top {
+  font-size: 3rem;
+  padding: 1rem 2rem; }
 
 .main-row {
   display: flex;
@@ -43,37 +69,40 @@ body {
     .main-row > [class^="col"]:last-child {
       align-self: flex-start; }
 
-.picture {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2; }
-
-.picture__img {
-  display: block;
-  width: 100%;
-  height: 50vh;
-  object-fit: cover; }
-
-.filters {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2; }
-
-.filter__content {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem; }
-
-.filter__prop {
-  padding: 2rem 4rem; }
-  .filter__prop--title {
-    display: flex; }
-  .filter__prop--slider {
-    position: relative;
-    margin-top: 1rem; }
-
 .codeblock {
-  padding: 1rem 5rem; }
+  position: relative; }
 
 .code__block {
-  font-size: 2rem; }
+  display: inline-block;
+  border: 1px solid red;
+  width: 80%;
+  height: 50%;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.code {
+  word-wrap: break-word;
+  text-align: left;
+  overflow: auto; }
+
+.effects {
+  grid-row: filter-start / filter-end;
+  grid-column: col-start 3 / col-end 4;
+  display: grid;
+  grid-template-rows: max-content 1fr .4fr; }
+
+h1.effects-top {
+  font-size: 3rem;
+  padding: 1rem 2rem; }
+
+.about {
+  grid-row: about-start / about-end;
+  grid-column: col-start 1 / col-end 4;
+  background-color: #000;
+  color: #fff; }
 
 .toggle-btn {
   height: 19px;
@@ -93,7 +122,7 @@ body {
   width: 15px;
   background-color: #fff;
   position: absolute;
-  top: 2.45px;
+  top: 0.2px;
   left: 3px;
   border-radius: 50%; }
 

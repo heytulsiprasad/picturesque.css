@@ -1,15 +1,14 @@
 .picture {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
+    grid-column: col-start 1 / col-end 4;
+    grid-row: cover-start / cover-end;
 }
 
 .picture {
+    display: flex;
 
     &__img {
         display: block;
         width: 100%;
-        height: 50vh;
         object-fit: cover;
     }
 }
-
