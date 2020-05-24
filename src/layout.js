@@ -3,15 +3,15 @@
 
 let edited = `
     <div class="picture__box">
-        <img id = "edit" class= "picture__img" src = "images/person-on-a-bridge-near-a-lake-747964.jpg"
-        alt = "person-on-a-bridge" />
+        <img id="edit" class="picture__img" src="images/person-on-a-bridge-near-a-lake-747964.jpg"
+            alt="person-on-a-bridge" />
     </div >
 `;
 
 let both = `
     <div class="picture__box">
-      <img id="edit" class="picture__img" src="images/person-on-a-bridge-near-a-lake-747964.jpg"
-        alt="person-on-a-bridge" />
+        <img id="edit" class="picture__img" src="images/person-on-a-bridge-near-a-lake-747964.jpg"
+            alt="person-on-a-bridge" />
     </div>
     <div class="picture__box">
       <img id="original" class="picture__img" src="images/person-on-a-bridge-near-a-lake-747964.jpg"
