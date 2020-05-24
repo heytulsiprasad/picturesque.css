@@ -1,7 +1,19 @@
 .about {
-    grid-row: about-start / about-end;
-    grid-column: col-start 1 / col-end 4;
+    grid-row: filter-start / filter-end;
+    grid-column: col-start 4 / col-end 4;
+    align-self: center;
 
-    background-color: #000;
-    color: #fff;
+    display: grid;
+    grid-template-rows: .5fr 1fr 1fr;
+    grid-gap: 2rem;
+    padding: 2rem 5rem;
+}
+
+.about-title {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.about-desc {
+    font-size: 1.5rem;
 }

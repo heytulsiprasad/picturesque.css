@@ -1,22 +1,23 @@
 .codeblock {
-    position: relative;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    background-color: #131417;
+    border-radius: 1rem;
+    margin-bottom: 5rem;
 }
 
 .code__block {
     display: inline-block;
-    border: 1px solid red;
-    width: 80%;
-    height: 50%;
     font-size: 2rem;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: 15rem;
+    width: 40rem;
+    padding: 2rem 3rem;
 }
 
 .code {
     word-wrap: break-word;
     text-align: left;
-    overflow: auto;
+    color: #fff;
+    line-height: 25px;
 }
