@@ -1,7 +1,11 @@
 // includes styles for complete page i.e. home page
 
 .container {
-    display: grid;
-    grid-template-rows: [cover-start] 1fr [cover-end filter-start] 1fr [filter-end];
-    grid-template-columns: repeat(4, [col-start] 2fr [col-end]);
+  display: grid;
+  grid-template-rows: [cover-start] 50rem [cover-end filter-start] 1fr [filter-end];
+  grid-template-columns: repeat(4, [col-start] 2fr [col-end]);
+
+  @media only screen and (max-width: $bp-largest) {
+    grid-template-rows: [cover-start] 50rem [cover-end filter-start] 1fr [filter-end extra-start] .5fr [extra-end];
+  }
 }
