@@ -4,7 +4,7 @@
     align-self: center;
 
     display: grid;
-    grid-template-rows: .5fr 1fr 1fr;
+    grid-template-rows: repeat(3, min-content);
     grid-gap: 2rem;
     padding: 2rem 5rem;
 }

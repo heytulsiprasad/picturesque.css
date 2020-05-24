@@ -8,14 +8,11 @@
 .picture {
     display: flex;
 
-    &__box {
-        height: 50vh;
-    }
+    &__box {}
 
     &__img {
         display: block;
-        // width: 100%;
-        height: inherit;
+        width: 100%;
         object-fit: cover;
     }
 }
