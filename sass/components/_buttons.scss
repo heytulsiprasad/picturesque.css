@@ -4,7 +4,7 @@
     margin-top: 5rem;
     align-items: center;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: $bp-largest) {
         margin-top: 2rem;
     }
 }
@@ -59,6 +59,10 @@ input[type="file"] {
 
 .btn-resp {
     width: 90%;
+
+    &:last-of-type {
+        margin-top: 5px;
+    }
 
     @media only screen and (max-width: $bp-small) {
         width: 60%;
