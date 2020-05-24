@@ -2,17 +2,23 @@
     grid-column: col-start 1 / col-end 4;
     grid-row: cover-start / cover-end;
 
-    align-self: center;
+    // align-self: center;
 }
 
 .picture {
     display: flex;
+    max-width: 100%;
+    height: auto;
 
-    &__box {}
+    &__box {
+        max-width: 100%;
+        text-align: center;
+    }
 
     &__img {
-        display: block;
-        width: 100%;
-        object-fit: cover;
+        max-width: 100%;
+        min-width: 300px;
+        height: auto;
+        object-fit: contain;
     }
 }

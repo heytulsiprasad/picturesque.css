@@ -3,80 +3,118 @@
 *::after {
   padding: 0;
   margin: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
+
+/* .ever {
+  display: flex;
+  width: inherit;
+} */
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+}
 
 body {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+}
 
 .heading-primary {
   font-size: 2.5rem;
   text-transform: lowercase;
-  font-weight: 300; }
+  font-weight: 300;
+}
 
 .heading-title {
   padding: 2rem 3rem;
-  margin-left: 2rem; }
+  margin-left: 2rem;
+}
 
 .heading-secondary {
   font-weight: 400;
-  font-size: 1.35rem; }
+  font-size: 1.35rem;
+}
 
 .prop__title {
-  margin-left: 1rem; }
+  margin-left: 1rem;
+}
 
 .container {
-  display: grid;
+  /* display: grid; */
   grid-template-rows: [cover-start] 1fr [cover-end filter-start] 1fr [filter-end];
-  grid-template-columns: repeat(4, [col-start] 2fr [col-end]); }
+  grid-template-columns: repeat(4, [col-start] 2fr [col-end]);
+}
 
 .picture {
   grid-column: col-start 1 / col-end 4;
   grid-row: cover-start / cover-end;
-  align-self: center; }
+}
 
 .picture {
-  display: flex; }
-  .picture__img {
-    display: block;
-    width: 100%;
-    object-fit: cover; }
+  display: flex;
+  max-width: 100%;
+  height: auto;
+}
+
+.picture__box {
+  max-width: 100%;
+  text-align: center;
+}
+
+.picture__img {
+  max-width: 100%;
+  min-width: 300px;
+  height: auto;
+  object-fit: contain;
+}
 
 .filters {
   grid-column: col-start 1 / col-end 2;
   grid-row: filter-start / filter-end;
   align-self: center;
   margin-left: 5rem;
-  margin-right: 5rem; }
-  .filters__backdrop {
-    background-color: #afafaf1f;
-    border-radius: 1rem;
-    box-sizing: content-box;
-    padding: 2rem 0; }
+  margin-right: 5rem;
+}
+
+.filters__backdrop {
+  background-color: #afafaf1f;
+  border-radius: 1rem;
+  box-sizing: content-box;
+  padding: 2rem 0;
+}
 
 .filter__prop {
-  padding: 1.5rem 2rem; }
-  .filter__prop--title {
-    display: flex; }
-  .filter__prop--slider {
-    position: relative;
-    margin-top: 1rem; }
+  padding: 1.5rem 2rem;
+}
+
+.filter__prop--title {
+  display: flex;
+}
+
+.filter__prop--slider {
+  position: relative;
+  margin-top: 1rem;
+}
 
 h1.filter-top {
   font-size: 3rem;
-  padding: 1rem 2rem; }
+  padding: 1rem 2rem;
+}
 
 .main-row {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
-  .main-row > [class^="col"] {
-    width: 50%; }
-    .main-row > [class^="col"]:last-child {
-      align-self: flex-start; }
+  align-items: center;
+}
+
+.main-row>[class^="col"] {
+  width: 50%;
+}
+
+.main-row>[class^="col"]:last-child {
+  align-self: flex-start;
+}
 
 .codeblock {
   justify-self: center;
@@ -84,20 +122,23 @@ h1.filter-top {
   text-align: center;
   background-color: #131417;
   border-radius: 1rem;
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+}
 
 .code__block {
   display: inline-block;
   font-size: 2rem;
   height: 15rem;
   width: 40rem;
-  padding: 2rem 3rem; }
+  padding: 2rem 3rem;
+}
 
 .code {
   word-wrap: break-word;
   text-align: left;
   color: #fff;
-  line-height: 25px; }
+  line-height: 25px;
+}
 
 .effects {
   grid-row: filter-start / filter-end;
@@ -105,7 +146,8 @@ h1.filter-top {
   align-self: center;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .about {
   grid-row: filter-start / filter-end;
@@ -114,14 +156,17 @@ h1.filter-top {
   display: grid;
   grid-template-rows: repeat(3, min-content);
   grid-gap: 2rem;
-  padding: 2rem 5rem; }
+  padding: 2rem 5rem;
+}
 
 .about-title {
   font-size: 2.4rem;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .about-desc {
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+}
 
 .toggle-btn {
   height: 19px;
@@ -130,11 +175,16 @@ h1.filter-top {
   border-radius: 10px;
   position: relative;
   transition: all .5s ease-in;
-  cursor: pointer; }
-  .toggle-btn--active {
-    background-color: #000000; }
-    .toggle-btn--active > div {
-      left: 22px; }
+  cursor: pointer;
+}
+
+.toggle-btn--active {
+  background-color: #000000;
+}
+
+.toggle-btn--active>div {
+  left: 22px;
+}
 
 .toggle-thumb {
   height: 15px;
@@ -143,7 +193,8 @@ h1.filter-top {
   position: absolute;
   top: 2px;
   left: 3px;
-  border-radius: 50%; }
+  border-radius: 50%;
+}
 
 .range__value {
   position: absolute;
@@ -153,17 +204,20 @@ h1.filter-top {
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.2);
   text-align: center;
-  color: #000; }
+  color: #000;
+}
 
 .range__content {
   display: flex;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+}
 
 .range__unit {
-  margin-left: 1px; }
+  margin-left: 1px;
+}
 
 .range {
   width: 80%;
@@ -172,26 +226,31 @@ h1.filter-top {
   background-color: rgba(0, 0, 0, 0.141);
   -webkit-appearance: none;
   outline: none;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .range::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: black; }
+  background-color: black;
+}
 
 .range:disabled::-webkit-slider-thumb {
-  background-color: gray; }
+  background-color: gray;
+}
 
 .range:disabled {
-  cursor: default; }
+  cursor: default;
+}
 
 .buttony {
   display: flex;
   flex-direction: column;
   margin-top: 5rem;
-  align-items: center; }
+  align-items: center;
+}
 
 .btn {
   background-color: #000000;
@@ -203,18 +262,25 @@ h1.filter-top {
   cursor: pointer;
   transition: all .1s ease-out;
   height: 3.5rem;
-  margin-top: .5rem; }
-  .btn:hover {
-    background-color: rgba(0, 0, 0, 0.76); }
-  .btn:active {
-    background-color: rgba(0, 0, 0, 0.466);
-    transform: scale(0.98); }
+  margin-top: .5rem;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.76);
+}
+
+.btn:active {
+  background-color: rgba(0, 0, 0, 0.466);
+  transform: scale(0.98);
+}
 
 .btn-reset {
-  width: 90%; }
+  width: 90%;
+}
 
 input[type="file"] {
-  display: none; }
+  display: none;
+}
 
 .custom-file-upload {
   border: 1px solid #ccc;
@@ -224,8 +290,13 @@ input[type="file"] {
   text-align: center;
   font-size: 1.5rem;
   border-radius: 1rem;
-  width: 90%; }
-  .custom-file-upload:hover {
-    background-color: rgba(0, 0, 0, 0.178); }
-  .custom-file-upload:active {
-    transform: scale(0.98); }
+  width: 90%;
+}
+
+.custom-file-upload:hover {
+  background-color: rgba(0, 0, 0, 0.178);
+}
+
+.custom-file-upload:active {
+  transform: scale(0.98);
+}

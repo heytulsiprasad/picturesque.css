@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "a tool for playing with css filters to get your picture perfect with just css",
   "main": "index.js",
-  "keywords": ["prettier"],
+  "keywords": [
+    "prettier"
+  ],
   "scripts": {
     "start": "live-server",
     "compile:sass": "node-sass sass/main.scss css/styles.css -o",
