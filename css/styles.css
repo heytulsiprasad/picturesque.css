@@ -40,11 +40,9 @@ body {
 
 .picture {
   display: flex; }
-  .picture__box {
-    height: 50vh; }
   .picture__img {
     display: block;
-    height: inherit;
+    width: 100%;
     object-fit: cover; }
 
 .filters {
@@ -114,7 +112,7 @@ h1.filter-top {
   grid-column: col-start 4 / col-end 4;
   align-self: center;
   display: grid;
-  grid-template-rows: .5fr 1fr 1fr;
+  grid-template-rows: repeat(3, min-content);
   grid-gap: 2rem;
   padding: 2rem 5rem; }
 
