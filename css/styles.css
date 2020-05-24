@@ -30,7 +30,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: [cover-start] 50rem [cover-end filter-start] 1fr [filter-end];
+  grid-template-rows: [cover-start] 40rem [cover-end filter-start] 1fr [filter-end];
   grid-template-columns: repeat(4, [col-start] 2fr [col-end]); }
   @media only screen and (max-width: 1300px) {
     .container {
@@ -94,7 +94,10 @@ body {
 .effects {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly; }
+  justify-content: center; }
+  @media only screen and (max-width: 800px) {
+    .effects {
+      justify-content: start; } }
 
 .about {
   align-self: center; }
@@ -127,10 +130,17 @@ body {
       text-align: justify; }
       .about-desc.socials {
         text-align: center; } }
-  .about-desc i.fab {
+
+.icon {
+  color: #000; }
+  .icon i {
     font-size: 2rem; }
-    .about-desc i.fab:not(:first-child) {
-      margin-left: 1rem; }
+  .icon:hover {
+    filter: opacity(0.75); }
+  .icon:active {
+    color: #000; }
+  .icon:not(:first-of-type) {
+    margin-left: 5px; }
 
 .effectsplusabout {
   display: flex;
@@ -216,7 +226,7 @@ body {
   flex-direction: column;
   margin-top: 5rem;
   align-items: center; }
-  @media only screen and (max-width: 550px) {
+  @media only screen and (max-width: 1300px) {
     .buttony {
       margin-top: 2rem; } }
 
@@ -258,6 +268,8 @@ input[type="file"] {
 
 .btn-resp {
   width: 90%; }
+  .btn-resp:last-of-type {
+    margin-top: 5px; }
   @media only screen and (max-width: 550px) {
     .btn-resp {
       width: 60%; } }

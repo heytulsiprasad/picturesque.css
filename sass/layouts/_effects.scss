@@ -1,5 +1,9 @@
 .effects {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+
+    @media only screen and (max-width: $bp-large) {
+        justify-content: start;
+    }
 }

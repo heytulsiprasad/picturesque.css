@@ -66,7 +66,7 @@ let $codeblock = $("#code");
 let showCode = function () {
   let css = $("#edit").attr("style");
   if (css === "") {
-    css = "No styles added! Keep adding.";
+    css = "No styles added. Keep adding!";
   }
   $codeblock.html(css);
 };

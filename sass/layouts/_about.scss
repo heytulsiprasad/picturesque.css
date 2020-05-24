@@ -38,12 +38,24 @@
             text-align: center;
         }
     }
+}
 
-    i.fab {
+.icon {
+    color: #000;
+
+    i {
         font-size: 2rem;
+    }
 
-        &:not(:first-child) {
-            margin-left: 1rem;
-        }
+    &:hover {
+        filter: opacity(0.75);
+    }
+
+    &:active {
+        color: #000;
+    }
+
+    &:not(:first-of-type) {
+        margin-left: 5px;
     }
 }

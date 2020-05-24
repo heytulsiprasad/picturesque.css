@@ -2,7 +2,7 @@
 
 .container {
   display: grid;
-  grid-template-rows: [cover-start] 50rem [cover-end filter-start] 1fr [filter-end];
+  grid-template-rows: [cover-start] 40rem [cover-end filter-start] 1fr [filter-end];
   grid-template-columns: repeat(4, [col-start] 2fr [col-end]);
 
   @media only screen and (max-width: $bp-largest) {
