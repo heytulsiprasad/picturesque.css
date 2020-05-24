@@ -35,8 +35,7 @@ body {
 
 .picture {
   grid-column: col-start 1 / col-end 4;
-  grid-row: cover-start / cover-end;
-  align-self: center; }
+  grid-row: cover-start / cover-end; }
 
 .picture {
   display: flex; }
