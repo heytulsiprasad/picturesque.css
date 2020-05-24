@@ -1,18 +1,17 @@
 .picture {
-    grid-column: col-start 1 / col-end 4;
-    grid-row: cover-start / cover-end;
-
-    align-self: center;
+  grid-column: col-start 1 / col-end 4;
+  grid-row: cover-start / cover-end;
 }
 
 .picture {
-    display: flex;
+  display: flex;
 
-    &__box {}
+  &__box {
+  }
 
-    &__img {
-        display: block;
-        width: 100%;
-        object-fit: cover;
-    }
+  &__img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
 }
