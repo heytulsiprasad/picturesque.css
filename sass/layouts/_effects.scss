@@ -1,12 +1,9 @@
 .effects {
     grid-row: filter-start / filter-end;
-    grid-column: col-start 3 / col-end 4;
+    grid-column: col-start 3 / col-end 3;
+    align-self: center;
 
-    display: grid;
-    grid-template-rows: max-content 1fr .4fr;
-}
-
-h1.effects-top {
-    font-size: 3rem;
-    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

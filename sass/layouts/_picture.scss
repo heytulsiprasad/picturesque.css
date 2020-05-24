@@ -1,14 +1,21 @@
 .picture {
     grid-column: col-start 1 / col-end 4;
     grid-row: cover-start / cover-end;
+
+    align-self: center;
 }
 
 .picture {
     display: flex;
 
+    &__box {
+        height: 50vh;
+    }
+
     &__img {
         display: block;
-        width: 100%;
+        // width: 100%;
+        height: inherit;
         object-fit: cover;
     }
 }

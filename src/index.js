@@ -269,7 +269,7 @@ $btn.each(function () {
 });
 
 // adding event listener to upload btn
-$("#upload").change(function () {
+$("#file-upload").change(function () {
   loadFile(event);
 });
 

@@ -1,6 +1,16 @@
 .filters {
     grid-column: col-start 1 / col-end 2;
     grid-row: filter-start / filter-end;
+    align-self: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+    &__backdrop {
+        background-color: #afafaf1f;
+        border-radius: 1rem;
+        box-sizing: content-box;
+        padding: 2rem 0;
+    }
 }
 
 .filter {

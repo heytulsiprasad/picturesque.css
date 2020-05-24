@@ -1,239 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/frame-with-picture_1f5bc.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8221a5b36b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Picturesque</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon"
-    href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/frame-with-picture_1f5bc.png"
-    type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <title>Picturesque</title>
-</head>
-
-<body class="container">
-  <!-- <div class="container"> -->
-  <div class="picture">
-    <div class="picture__box">
-      <img id="edit" class="picture__img" src="images/person-on-a-bridge-near-a-lake-747964.jpg"
-        alt="person-on-a-bridge" />
+  <body class="container">
+    <!-- <div class="container"> -->
+    <div class="picture">
+      <div class="picture__box">
+        <img
+          id="edit"
+          class="picture__img"
+          src="images/person-on-a-bridge-near-a-lake-747964.jpg"
+          alt="person-on-a-bridge"
+        />
+      </div>
+      <div class="picture__box">
+        <img
+          id="original"
+          class="picture__img"
+          src="images/person-on-a-bridge-near-a-lake-747964.jpg"
+          alt="person-on-a-bridge"
+        />
+      </div>
     </div>
-    <div class="picture__box">
-      <img id="original" class="picture__img" src="images/person-on-a-bridge-near-a-lake-747964.jpg"
-        alt="person-on-a-bridge" />
-    </div>
-  </div>
-  <div class="filters">
-    <h1 class="filter-top">Let's add some magic!</h1>
-    <div class="main-row">
-      <div class="col-1">
-        <div class="filter__prop">
-          <div class="filter__prop--title">
-            <div class="toggle-btn">
-              <div class="toggle-thumb"></div>
-            </div>
-            <h2 class="prop__title heading-secondary">
-              blur
-            </h2>
-          </div>
-          <div class="filter__prop--slider">
-            <div class="range__value">
-              <div class="range__content">
-                <p class="range__num">0</p>
-                <p class="range__unit">px</p>
+    <div class="filters filters__backdrop">
+      <div class="main-row">
+        <div class="col-1">
+          <div class="filter__prop">
+            <div class="filter__prop--title">
+              <div class="toggle-btn">
+                <div class="toggle-thumb"></div>
               </div>
+              <h2 class="prop__title heading-secondary">
+                blur
+              </h2>
             </div>
-            <input type="range" class="range" value="0" min="0" max="20" step=".01" disabled />
+            <div class="filter__prop--slider">
+              <div class="range__value">
+                <div class="range__content">
+                  <p class="range__num">0</p>
+                  <p class="range__unit">px</p>
+                </div>
+              </div>
+              <input
+                type="range"
+                class="range"
+                value="0"
+                min="0"
+                max="20"
+                step=".01"
+                disabled
+              />
+            </div>
+          </div>
+          <div class="filter__prop">
+            <div class="filter__prop--title">
+              <div class="toggle-btn">
+                <div class="toggle-thumb"></div>
+              </div>
+              <h2 class="prop__title heading-secondary">
+                brightness
+              </h2>
+            </div>
+            <div class="filter__prop--slider">
+              <div class="range__value">
+                <div class="range__content">
+                  <p class="range__num">0</p>
+                  <p class="range__unit"></p>
+                </div>
+              </div>
+              <input
+                type="range"
+                class="range"
+                value="0"
+                min="0"
+                max="5"
+                step="0.001"
+                disabled
+              />
+            </div>
+          </div>
+          <div class="filter__prop">
+            <div class="filter__prop--title">
+              <div class="toggle-btn">
+                <div class="toggle-thumb"></div>
+              </div>
+              <h2 class="prop__title heading-secondary">
+                contrast
+              </h2>
+            </div>
+            <div class="filter__prop--slider">
+              <div class="range__value">
+                <div class="range__content">
+                  <p class="range__num">0</p>
+                  <p class="range__unit">%</p>
+                </div>
+              </div>
+              <input
+                type="range"
+                class="range"
+                value="0"
+                min="0"
+                max="500"
+                disabled
+              />
+            </div>
+          </div>
+          <div class="filter__prop">
+            <div class="filter__prop--title">
+              <div class="toggle-btn">
+                <div class="toggle-thumb"></div>
+              </div>
+              <h2 class="prop__title heading-secondary">
+                grayscale
+              </h2>
+            </div>
+            <div class="filter__prop--slider">
+              <div class="range__value">
+                <div class="range__content">
+                  <p class="range__num">0</p>
+                  <p class="range__unit">%</p>
+                </div>
+              </div>
+              <input
+                type="range"
+                class="range"
+                value="0"
+                min="0"
+                max="100"
+                disabled
+              />
+            </div>
+          </div>
+          <div class="filter__prop">
+            <div class="filter__prop--title">
+              <div class="toggle-btn">
+                <div class="toggle-thumb"></div>
+              </div>
+              <h2 class="prop__title heading-secondary">
+                hue-rotate
+              </h2>
+            </div>
+            <div class="filter__prop--slider">
+              <div class="range__value">
+                <div class="range__content">
+                  <p class="range__num">0</p>
+                  <p class="range__unit">deg</p>
+                </div>
+              </div>
+              <input
+                type="range"
+                class="range"
+                value="0"
+                min="0"
+                max="360"
+                disabled
+              />
+            </div>
           </div>
         </div>
-        <div class="filter__prop">
-          <div class="filter__prop--title">
-            <div class="toggle-btn">
-              <div class="toggle-thumb"></div>
-            </div>
-            <h2 class="prop__title heading-secondary">
-              brightness
-            </h2>
-          </div>
-          <div class="filter__prop--slider">
-            <div class="range__value">
-              <div class="range__content">
-                <p class="range__num">0</p>
-                <p class="range__unit"></p>
+        <div class="col-2">
+          <div class="filter__prop">
+            <div class="filter__prop--title">
+              <div class="toggle-btn">
+                <div class="toggle-thumb"></div>
               </div>
+              <h2 class="prop__title heading-secondary">
+                invert
+              </h2>
             </div>
-            <input type="range" class="range" value="0" min="0" max="5" step="0.001" disabled />
-          </div>
-        </div>
-        <div class="filter__prop">
-          <div class="filter__prop--title">
-            <div class="toggle-btn">
-              <div class="toggle-thumb"></div>
-            </div>
-            <h2 class="prop__title heading-secondary">
-              contrast
-            </h2>
-          </div>
-          <div class="filter__prop--slider">
-            <div class="range__value">
-              <div class="range__content">
-                <p class="range__num">0</p>
-                <p class="range__unit">%</p>
+            <div class="filter__prop--slider">
+              <div class="range__value">
+                <div class="range__content">
+                  <p class="range__num">0</p>
+                  <p class="range__unit">%</p>
+                </div>
               </div>
+              <input
+                type="range"
+                class="range"
+                value="0"
+                min="0"
+                max="100"
+                disabled
+              />
             </div>
-            <input type="range" class="range" value="0" min="0" max="500" disabled />
           </div>
-        </div>
-        <div class="filter__prop">
-          <div class="filter__prop--title">
-            <div class="toggle-btn">
-              <div class="toggle-thumb"></div>
-            </div>
-            <h2 class="prop__title heading-secondary">
-              grayscale
-            </h2>
-          </div>
-          <div class="filter__prop--slider">
-            <div class="range__value">
-              <div class="range__content">
-                <p class="range__num">0</p>
-                <p class="range__unit">%</p>
+          <div class="filter__prop">
+            <div class="filter__prop--title">
+              <div class="toggle-btn">
+                <div class="toggle-thumb"></div>
               </div>
+              <h2 class="prop__title heading-secondary">
+                opacity
+              </h2>
             </div>
-            <input type="range" class="range" value="0" min="0" max="100" disabled />
-          </div>
-        </div>
-        <div class="filter__prop">
-          <div class="filter__prop--title">
-            <div class="toggle-btn">
-              <div class="toggle-thumb"></div>
-            </div>
-            <h2 class="prop__title heading-secondary">
-              hue-rotate
-            </h2>
-          </div>
-          <div class="filter__prop--slider">
-            <div class="range__value">
-              <div class="range__content">
-                <p class="range__num">0</p>
-                <p class="range__unit">deg</p>
+            <div class="filter__prop--slider">
+              <div class="range__value">
+                <div class="range__content">
+                  <p class="range__num">0</p>
+                  <p class="range__unit">%</p>
+                </div>
               </div>
+              <input
+                type="range"
+                class="range"
+                value="0"
+                min="0"
+                max="100"
+                disabled
+              />
             </div>
-            <input type="range" class="range" value="0" min="0" max="360" disabled />
+          </div>
+          <div class="filter__prop">
+            <div class="filter__prop--title">
+              <div class="toggle-btn">
+                <div class="toggle-thumb"></div>
+              </div>
+              <h2 class="prop__title heading-secondary">
+                saturate
+              </h2>
+            </div>
+            <div class="filter__prop--slider">
+              <div class="range__value">
+                <div class="range__content">
+                  <p class="range__num">0</p>
+                  <p class="range__unit">%</p>
+                </div>
+              </div>
+              <input
+                type="range"
+                class="range"
+                value="0"
+                min="0"
+                max="500"
+                disabled
+              />
+            </div>
+          </div>
+          <div class="filter__prop">
+            <div class="filter__prop--title">
+              <div class="toggle-btn">
+                <div class="toggle-thumb"></div>
+              </div>
+              <h2 class="prop__title heading-secondary">
+                sepia
+              </h2>
+            </div>
+            <div class="filter__prop--slider">
+              <div class="range__value">
+                <div class="range__content">
+                  <p class="range__num">0</p>
+                  <p class="range__unit">%</p>
+                </div>
+              </div>
+              <input
+                type="range"
+                class="range"
+                value="0"
+                min="0"
+                max="100"
+                disabled
+              />
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-2">
-        <div class="filter__prop">
-          <div class="filter__prop--title">
-            <div class="toggle-btn">
-              <div class="toggle-thumb"></div>
-            </div>
-            <h2 class="prop__title heading-secondary">
-              invert
-            </h2>
-          </div>
-          <div class="filter__prop--slider">
-            <div class="range__value">
-              <div class="range__content">
-                <p class="range__num">0</p>
-                <p class="range__unit">%</p>
-              </div>
-            </div>
-            <input type="range" class="range" value="0" min="0" max="100" disabled />
-          </div>
-        </div>
-        <div class="filter__prop">
-          <div class="filter__prop--title">
-            <div class="toggle-btn">
-              <div class="toggle-thumb"></div>
-            </div>
-            <h2 class="prop__title heading-secondary">
-              opacity
-            </h2>
-          </div>
-          <div class="filter__prop--slider">
-            <div class="range__value">
-              <div class="range__content">
-                <p class="range__num">0</p>
-                <p class="range__unit">%</p>
-              </div>
-            </div>
-            <input type="range" class="range" value="0" min="0" max="100" disabled />
-          </div>
-        </div>
-        <div class="filter__prop">
-          <div class="filter__prop--title">
-            <div class="toggle-btn">
-              <div class="toggle-thumb"></div>
-            </div>
-            <h2 class="prop__title heading-secondary">
-              saturate
-            </h2>
-          </div>
-          <div class="filter__prop--slider">
-            <div class="range__value">
-              <div class="range__content">
-                <p class="range__num">0</p>
-                <p class="range__unit">%</p>
-              </div>
-            </div>
-            <input type="range" class="range" value="0" min="0" max="500" disabled />
-          </div>
-        </div>
-        <div class="filter__prop">
-          <div class="filter__prop--title">
-            <div class="toggle-btn">
-              <div class="toggle-thumb"></div>
-            </div>
-            <h2 class="prop__title heading-secondary">
-              sepia
-            </h2>
-          </div>
-          <div class="filter__prop--slider">
-            <div class="range__value">
-              <div class="range__content">
-                <p class="range__num">0</p>
-                <p class="range__unit">%</p>
-              </div>
-            </div>
-            <input type="range" class="range" value="0" min="0" max="100" disabled />
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 
-  <div class="effects">
-    <h1 class="effects-top">Now, here's your code!</h1>
-    <!-- place where user sees the code -->
-    <div class="codeblock">
-      <pre class="code__block">
-        <code id="code" class=".code">
-          Lorem ipsum is not code
+    <div class="effects">
+      <!-- place where user sees the code -->
+      <div class="codeblock">
+        <code id="code" class="code__block code">
+          filter: blur(8.5px) brightness(1.578) contrast(431%)
+          grayscale(83%) hue-rotate(297deg) invert(0%) opacity(0%)
+          saturate(0%) sepia(22%);
         </code>
-      </pre>
+      </div>
+
+      <!-- upload and reset buttons -->
+      <div class="buttony">
+        <label for="file-upload" class="custom-file-upload">
+          <i
+            class="fa fa-cloud-upload"
+            style="margin-right: 4px;"
+          ></i>
+          Custom Upload
+        </label>
+        <input
+          id="file-upload"
+          name="image"
+          accept="image/*"
+          type="file"
+        />
+        <button class="btn btn-reset" id="reset">
+          <i
+            class="fas fa-trash-restore"
+            style="margin-right: 4px;"
+          ></i>
+          Reset All
+        </button>
+      </div>
     </div>
 
-    <!-- upload and reset buttons -->
-    <div class="buttony">
-      <label class="btn-upload" for="upload">
-        Upload your own image!
-        <input type="file" id="upload" name="image" accept="image/*" />
-      </label>
-      <button class="btn" id="reset">
-        Reset All
-      </button>
+    <div class="about about-structure">
+      <h1 class="about-title">A little about this project</h1>
+      <p class="about-desc">
+        For a long time, I was struggling to style images quickly
+        using CSS Filters and I had to spend a lot of time in dev
+        tools to get the perfect styling to an image. Then I was
+        inspired by a great tool for designing our hero sections by
+        Sarah. I thought, why not built a tool for using css filters
+        as well!
+      </p>
+      <p class="about-desc">
+        You can toggle any filter to add it and change the values with
+        the slider and import the code to your project.
+      </p>
     </div>
-  </div>
 
-  <div class="about">
-    <h1>Everywhere on Earth!</h1>
-  </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="src/index.js"></script>
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="src/index.js"></script>
+  </body>
 </html>
