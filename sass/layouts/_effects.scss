@@ -1,9 +1,5 @@
 .effects {
-    grid-row: filter-start / filter-end;
-    grid-column: col-start 3 / col-end 3;
-    align-self: center;
-
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
 }

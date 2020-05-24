@@ -1,15 +1,26 @@
 .filters {
     grid-column: col-start 1 / col-end 2;
     grid-row: filter-start / filter-end;
-    align-self: center;
     margin-left: 5rem;
     margin-right: 5rem;
 
     &__backdrop {
         background-color: #afafaf1f;
         border-radius: 1rem;
-        box-sizing: content-box;
         padding: 2rem 0;
+    }
+
+    @media only screen and (max-width: $bp-largest) {
+        grid-column: col-start 1 / col-end 4;
+        margin-top: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        margin: 0;
+
+        &__backdrop {
+            border-radius: 0;
+        }
     }
 }
 
@@ -25,12 +36,11 @@
             position: relative;
             margin-top: 1rem;
         }
-    }
-}
 
-h1.filter-top {
-    font-size: 3rem;
-    padding: 1rem 2rem;
+        @media only screen and (max-width: $bp-small) {
+            width: 35rem;
+        }
+    }
 }
 
 .main-row {
@@ -38,11 +48,17 @@ h1.filter-top {
     justify-content: space-between;
     align-items: center;
 
-    &>[class^="col"] {
-        width: 50%;
+    @media only screen and (min-width: $bp-small) {
+        &>[class^="col"] {
+            width: 50%;
 
-        &:last-child {
-            align-self: flex-start;
+            &:last-child {
+                align-self: flex-start;
+            }
         }
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        flex-direction: column;
     }
 }

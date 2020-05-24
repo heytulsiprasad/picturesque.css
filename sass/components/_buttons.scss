@@ -3,10 +3,14 @@
     flex-direction: column;
     margin-top: 5rem;
     align-items: center;
+
+    @media only screen and (max-width: $bp-small) {
+        margin-top: 2rem;
+    }
 }
 
 .btn {
-    background-color: #000000;
+    background-color: hsl(0, 0%, 0%);
     padding: .1rem 5rem;
     border-radius: 1rem;
     border: none;
@@ -15,7 +19,6 @@
     cursor: pointer;
     transition: all .1s ease-out;
     height: 3.5rem;
-    margin-top: .5rem;
 
     &:hover {
         background-color: rgba(0, 0, 0, 0.76);
@@ -28,7 +31,8 @@
 }
 
 .btn-reset {
-    width: 90%;
+    font-family: inherit;
+    font-size: 1.5rem;
 }
 
 input[type="file"] {
@@ -43,7 +47,6 @@ input[type="file"] {
     text-align: center;
     font-size: 1.5rem;
     border-radius: 1rem;
-    width: 90%;
 
     &:hover {
         background-color: rgba(0, 0, 0, 0.178);
@@ -51,5 +54,13 @@ input[type="file"] {
 
     &:active {
         transform: scale(.98);
+    }
+}
+
+.btn-resp {
+    width: 90%;
+
+    @media only screen and (max-width: $bp-small) {
+        width: 60%;
     }
 }

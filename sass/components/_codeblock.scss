@@ -4,15 +4,18 @@
     text-align: center;
     background-color: #131417;
     border-radius: 1rem;
-    margin-bottom: 5rem;
 }
 
 .code__block {
     display: inline-block;
-    font-size: 2rem;
     height: 15rem;
     width: 40rem;
     padding: 2rem 3rem;
+
+    @media only screen and (max-width: $bp-large) {
+        width: 30rem;
+        height: 18rem;
+    }
 }
 
 .code {
@@ -20,4 +23,5 @@
     text-align: left;
     color: #fff;
     line-height: 25px;
+    font-size: 1.75rem;
 }

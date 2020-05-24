@@ -1,19 +1,49 @@
 .about {
-    grid-row: filter-start / filter-end;
-    grid-column: col-start 4 / col-end 4;
     align-self: center;
+}
 
+.about-structure {
     display: grid;
-    grid-template-rows: repeat(3, min-content);
+    grid-template-rows: repeat(4, min-content);
     grid-gap: 2rem;
-    padding: 2rem 5rem;
+    padding: 1rem 3rem;
+    max-width: 35rem;
+
+    @media only screen and (max-width: $bp-large) {
+        padding: 1rem 2rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        margin-top: 2rem;
+    }
 }
 
 .about-title {
     font-size: 2.4rem;
     font-weight: bold;
+
+    @media only screen and (max-width: $bp-small) {
+        text-align: center;
+    }
 }
 
 .about-desc {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
+
+    @media only screen and (max-width: $bp-small) {
+        text-align: justify;
+
+        &.socials {
+            text-align: center;
+        }
+    }
+
+    i.fab {
+        font-size: 2rem;
+
+        &:not(:first-child) {
+            margin-left: 1rem;
+        }
+    }
 }
