@@ -10,7 +10,8 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: 'Quicksand', sans-serif; }
+  font-family: 'Quicksand', sans-serif;
+  height: 100vh; }
 
 .heading-primary {
   font-size: 2.5rem;
@@ -30,11 +31,14 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: [cover-start] 40rem [cover-end filter-start] 1fr [filter-end];
+  grid-template-rows: [cover-start] 50vh [cover-end filter-start] 50vh [filter-end];
   grid-template-columns: repeat(4, [col-start] 2fr [col-end]); }
   @media only screen and (max-width: 1300px) {
     .container {
-      grid-template-rows: [cover-start] 50rem [cover-end filter-start] 1fr [filter-end extra-start] 0.5fr [extra-end]; } }
+      grid-template-rows: [cover-start] 50rem [cover-end filter-start] 1fr [filter-end extra-start] 1fr [extra-end]; } }
+  @media only screen and (max-height: 800px) {
+    .container {
+      grid-template-rows: [cover-start] 40rem [cover-end filter-start] 1fr [filter-end]; } }
 
 .picture {
   grid-column: col-start 1 / col-end 4;
@@ -52,15 +56,16 @@ body {
   grid-column: col-start 1 / col-end 2;
   grid-row: filter-start / filter-end;
   margin-left: 5rem;
-  margin-right: 5rem; }
+  margin-right: 5rem;
+  margin-top: 1rem;
+  align-self: center; }
   .filters__backdrop {
     background-color: #afafaf1f;
     border-radius: 1rem;
     padding: 2rem 0; }
   @media only screen and (max-width: 1300px) {
     .filters {
-      grid-column: col-start 1 / col-end 4;
-      margin-top: 2rem; } }
+      grid-column: col-start 1 / col-end 4; } }
   @media only screen and (max-width: 440px) {
     .filters {
       margin: 0; }
@@ -151,8 +156,8 @@ body {
     .effectsplusabout {
       grid-row: extra-start / extra-end;
       grid-column: col-start 1 / col-end 4;
-      margin: 2rem 0;
-      padding: 0 1rem; } }
+      padding: 0 1rem;
+      margin: 1rem 0; } }
   @media only screen and (max-width: 550px) {
     .effectsplusabout {
       flex-direction: column; } }
@@ -232,7 +237,7 @@ body {
 
 .btn {
   background-color: black;
-  padding: .1rem 5rem;
+  padding: .1rem 0;
   border-radius: 1rem;
   border: none;
   outline: none;
