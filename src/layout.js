@@ -15,7 +15,9 @@ function both() {
         ${$(".picture__box").html().trim()}
     </div>
     <div class="picture__box">
-      <img id="original" class="picture__img" src="https://picsum.photos/1280/808"
+      <img id="original" class="picture__img" src=${$("#edit").attr(
+        "src",
+      )}
         alt="person-on-a-bridge" />
     </div>
 `;
