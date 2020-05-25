@@ -12,6 +12,8 @@
 .range__content {
     display: flex;
     @include absCenter;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 .range__unit {

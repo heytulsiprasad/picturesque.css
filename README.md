@@ -1,6 +1,6 @@
 # Making your images just, Picturesque.
 
-![Working Demo](https://i.imgur.com/4BTY962.png)
+![Working Demo](https://i.imgur.com/bz8kVBq.png)
 
 
 You can use this whenever you want to give your image a slight tint of purple or shallow it in grayscale just for fun, and don't want to go all the way into your Photoshop and create and host another image. This is it. This is the purpose of this website. 
@@ -11,12 +11,11 @@ You can use this whenever you want to give your image a slight tint of purple or
 **Fork and Clone the repo at first.** 
 
 - `cd picturesque.css`
-- `npm install`
+- `npm install live-server node-sass npm-run-all`
 - `npm run dev`
 
-This project just uses three packages as devDependencies. So you need to have them in order to run `npm run dev` command.
 
-Also, the JS code is highly documented in order to get started within a flash.
+Also, the JS code is highly documented in order for you, to get started within a flash.
 
 Don't forget to give it a :star: if you liked it!
 
