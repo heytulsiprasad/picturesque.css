@@ -3,6 +3,8 @@
     grid-row: filter-start / filter-end;
     margin-left: 5rem;
     margin-right: 5rem;
+    margin-top: 1rem;
+    align-self: center;
 
     &__backdrop {
         background-color: #afafaf1f;
@@ -12,9 +14,8 @@
 
     @media only screen and (max-width: $bp-largest) {
         grid-column: col-start 1 / col-end 4;
-        margin-top: 2rem;
     }
-
+    
     @media only screen and (max-width: $bp-smallest) {
         margin: 0;
 

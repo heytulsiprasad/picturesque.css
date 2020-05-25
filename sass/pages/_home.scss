@@ -2,10 +2,14 @@
 
 .container {
   display: grid;
-  grid-template-rows: [cover-start] 40rem [cover-end filter-start] 1fr [filter-end];
+  grid-template-rows: [cover-start] 50vh [cover-end filter-start] 50vh [filter-end];
   grid-template-columns: repeat(4, [col-start] 2fr [col-end]);
 
   @media only screen and (max-width: $bp-largest) {
-    grid-template-rows: [cover-start] 50rem [cover-end filter-start] 1fr [filter-end extra-start] .5fr [extra-end];
+    grid-template-rows: [cover-start] 50rem [cover-end filter-start] 1fr [filter-end extra-start] 1fr [extra-end];
+  }
+
+  @media only screen and (max-height: $bp-large) {
+    grid-template-rows: [cover-start] 40rem [cover-end filter-start] 1fr [filter-end];
   }
 }
