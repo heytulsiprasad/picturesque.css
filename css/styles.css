@@ -23,8 +23,10 @@ body {
   margin-left: 2rem; }
 
 .heading-secondary {
-  font-weight: 400;
-  font-size: 1.35rem; }
+  font-weight: bold;
+  font-size: 1.5rem; }
+  .heading-secondary::first-letter {
+    text-transform: uppercase; }
 
 .prop__title {
   margin-left: 1rem; }
@@ -285,7 +287,7 @@ input[type="file"] {
   justify-self: center;
   align-self: center;
   text-align: center;
-  background-color: #131417;
+  background-color: #2e3748;
   border-radius: 1rem; }
 
 .code__block {
